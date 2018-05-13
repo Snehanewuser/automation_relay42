@@ -1,8 +1,8 @@
-# relay_42_automation: Create an engagement, Create an audience, Emulate a visit to the product page and Check that the user has entered the audience
+# relay42_automation: Create an engagement, Create an audience, Emulate a visit to the product page and Check that the user has entered the audience
 
 ******************The code is developed is python selenium for relay42***************
 
-The following document is a helper to set up the automation ENVIRONMENT on the containers for the test execution
+The following document is a helper to set up an automation environment on the containers for the test execution
 
 1.The host machine is a ubuntu linux
 
@@ -12,7 +12,7 @@ The following document is a helper to set up the automation ENVIRONMENT on the c
 
 4.To install vnc-viewer refer : https://www.realvnc.com/en/connect/download/viewer/linux/
 
-5.On the host do "mkdir /tmp/relay42_results"
+5.On the host do "mkdir /tmp/relay42_results", as the results are stored at this location.
 
 6.On the host do a  "git clone https://github.com/Snehanewuser/automation_relay42.git"
  
@@ -27,9 +27,11 @@ docker build . -t relay42_automation:0.0.1
 10.Use docker run to launch an instance and also mount the results folder, set the web-APP port and the vnc port with instance name
 
 11.Use the following cmd to trigger docker run for SINGLE INSTANCE :
+
 docker run --rm -p 6080:80 -p 5900:5900 -v /tmp/relay42_results:/tmp/relay42_results relay42_automation:0.0.1
 
 12.Use the following cmd for multiple instance :
+
 docker run --rm -p 6080:80 -p 5900:5900 -v /tmp/relay42_results:/tmp/relay42_results relay42_automation:0.0.1 
 
 and 
