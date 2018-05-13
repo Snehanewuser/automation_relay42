@@ -11,5 +11,5 @@ RUN tar -zxvf ./geckodriver-v0.20.1-linux64.tar.gz -C /usr/local/bin
 
 RUN mkdir /relay42
 COPY ./relay_42 /relay42/ 
-WORKDIR /sneha
+WORKDIR /relay42
 CMD ["python","relay42_main.py"]
