@@ -74,7 +74,10 @@ relay42_usermodules.py contains all the def functions
 relay42_libmodules.py contains the reporting module used for logging results and info
 
 in order to execute the script locally on the host machine use the following
-cd ~/relay_42
+
+
+cd ~/automation_relay42/relay42_automation/relay_42
+
 python relay42_main.py
 
 
