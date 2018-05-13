@@ -7,7 +7,9 @@ The following document is a helper to set up the automation ENVIRONMENT on the c
 4. To install vnc-viewer refer : https://www.realvnc.com/en/connect/download/viewer/linux/
 5. on the host do "mkdir /tmp/relay42_results"
 6. do a git clone https://github.com/Snehanewuser/automation_relay42.git
-7. Dockerfile contains the  from image repo for the image to be created and the required installables and copies the automation code to the image at /relay42
+ 
+ cd ~/automation_relay42/relay42_automation/
+ The Dockerfile at ~/automation_relay42/relay42_automation/  contains the from image repo for the image to be created and the required installables and copies the automation code to the image at /relay42
 
 Use the command to build the image : 
 
@@ -61,8 +63,10 @@ docker run --rm -p 6081:80 -p 5901:5900 -v /tmp/relay42_results:/tmp/relay42_res
 The python automation code is designed in a modular manner to make debugging easy and can be executed indepently when in need of trouble shooting.
 also the suite contains an.js file support the html5 function where the python-selenium couldn't handle.
 
+THE AUTOMATION CODE at ~/automation_relay42/relay42_automation/relay_42 contains the automation suite.
 
-the module 
+Brief description about the modules is as follows:
+
 relay42_main.py creates dynamic engagement identity that can used in all the modules and the relay_main.py also contains the function call for all the def functions (create engagement, create audience and audience validation)
 
 relay42_usermodules.py contains all the def functions 
@@ -72,5 +76,6 @@ relay42_libmodules.py contains the reporting module used for logging results and
 in order to execute the script locally on the host machine use the following
 cd ~/relay_42
 python relay42_main.py
+
 
 
