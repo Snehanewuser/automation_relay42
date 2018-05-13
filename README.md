@@ -6,7 +6,7 @@ The following document is a helper to set up the automation ENVIRONMENT on the c
 3. To install docker refer : https://docs.docker.com/install/linux/docker-ce/ubuntu/#os-requirements
 4. To install vnc-viewer refer : https://www.realvnc.com/en/connect/download/viewer/linux/
 5. on the host do "mkdir /tmp/relay42_results"
-6. do a git clone https://github.com/Snehanewuser/relay_42_automation.git
+6. do a git clone https://github.com/Snehanewuser/automation_relay42.git
 7. Dockerfil contains the  from image repo for the image to be created and the required installables and copies the automation code to the image at /relay42
 Use the command to build the image : docker build . -t relay42_automation:0.0.1
 Once the image is succesfully built as follows:
