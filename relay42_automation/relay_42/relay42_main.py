@@ -25,8 +25,8 @@ newscript ="********************************************************************
 report_status(newscript)
 engagement = "Tomato_" + ''.join([random.choice(string.ascii_letters +
 string.digits) for n in xrange(3)])
-username="relay42test1@gmail.com"
-password="relay42test"
+username="xxxxxxxxx@xxxxxx.com"
+password="xxxxxxxxx"
 report_status(engagement)
 engagement_link = create_engagement(username, password, engagement)
 report_status(engagement_link)
