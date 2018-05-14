@@ -1,3 +1,24 @@
+###########################################################################################
+# relay42 test automation demonstration
+                   #
+#
+                   #
+# (C) 2018 by Sneha Mirajkar (sneha.mirajkar@gmail.com)
+                   #
+# Can be copied for any purposes, Please get prior approval.
+                   #
+#
+                   #
+# The relya42_libmodules.py the library function reporting function
+used to log           #
+# messages(info about teststeps and the results of the testcasesin the
+                   #
+#/tmp/relay42_results/reportyfile.txt. This function is callable from
+all other functions #
+#
+                   #
+###########################################################################################
+
 #!/usr/bin/env python
 
 def report_status(reportstring):
