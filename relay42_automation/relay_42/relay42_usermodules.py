@@ -204,7 +204,7 @@ def send_req_n_validate_audi_entry(username, password, audiencelink, engagement)
 		resp = requests.get(send_request).content
 		user_enter_audience = "https://api.relay42.com/v1/site-1233/profiles/42/segments"+"?partnerId="+str(randonuuid)
 		
-		resp_1 = requests.get(user_enter_audience, auth=('relay42test1@gmail.com', 'relay42test'), verify=False).content
+		resp_1 = requests.get(user_enter_audience, auth=(username, password), verify=False).content
 		if (re.search(apistring, resp_1)):
 			report_string = "the user has entered the audience list"
 			report_status(report_string)
