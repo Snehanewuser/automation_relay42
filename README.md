@@ -23,6 +23,8 @@
 8. The Dockerfile at ~/automation_relay42/relay42_automation/ contains the details about how to build a docker image from the repo and install the required installables and copies the automation code to the image at ~/automation_relay42/relay42.
 
 9. Use the following command to build the image:
+    
+    cd ~/automation_relay42/relay42_automation/
 
     docker build . -t relay42_automation:0.0.1
 
