@@ -2,6 +2,8 @@
 
 ***The code is developed on python-selenium for relay42 for demonstration only*****
 
+****************** Please add USERNAME and PASSWORD in the relay42_main.py, they have been for security purpose.
+
 The document is a helper to set up an automation environment on the containers for the test execution
 
 1. The host machine is an ubuntu linux system.
