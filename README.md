@@ -1,6 +1,6 @@
 # relay42_automation: Create an engagement, Create an audience, Emulate a visit to the product page and Check that the user has entered the audience
 
-******************The code is developed is python selenium for relay42***************
+******************The code is developed in python selenium for relay42***************
 
 The following document is a helper to set up an automation environment on the containers for the test execution
 
