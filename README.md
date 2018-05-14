@@ -14,7 +14,7 @@
 
 4. To install vnc-viewer refer: https://www.realvnc.com/en/connect/download/viewer/linux/
 
-5. On the host, execute command "mkdir /tmp/relay42_results", as the results are stored at this location.
+5. On the host, execute command "mkdir /tmp/relay42_results", touch mkdir /tmp/relay42_results/reportfile.txt, as the results are stored at this location.
 
 6. On the host, execute command “git clone https://github.com/Snehanewuser/automation_relay42.git" to clone the git repo.
 
