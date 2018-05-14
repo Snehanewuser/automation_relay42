@@ -1,30 +1,16 @@
 ###########################################################################################
 # relay42 test automation demonstration
-                   #
 #
-                   #
-# (C) 2018 by Sneha Mirajkar (sneha.mirajkar@gmail.com)
-                   #
+# (C) 2018 by Sneha Mirajkar (sneha.mirajkar@gmail.com)                  
 # Can be copied for any purposes, Please get prior approval.
-                   #
-#
-                   #
+# 
 # The relya42_usermodules.py contains the following def function
-                   #
-# The create_engagement functions accepts username, password and the
-runtime engagement-id#
-# and creates the engagement and returns the engagement page link to
-relay42_main.py      #
-# The create_audience functions accepts username, password and the
-engagement-id          #
-# and creates the audience and returns the audience page link to
-relay42_main.py          #
-# The send_req_n_validate_audi_entry functions accepts username,
-password, engagement-id  #
-# and the audience page link to send request and validate the audience
-visit.             #
-#
-                   #
+# The create_engagement functions accepts username, password and theruntime engagement-id
+# and creates the engagement and returns the engagement page link torelay42_main.py      
+# The create_audience functions accepts username, password and theengagement-id          
+# and creates the audience and returns the audience page link torelay42_main.py          
+# The send_req_n_validate_audi_entry functions accepts username,password, engagement-id  
+# and the audience page link to send request and validate the audiencevisit.             
 ###########################################################################################
 
 
