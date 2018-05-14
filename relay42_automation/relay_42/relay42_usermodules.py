@@ -1,6 +1,36 @@
+###########################################################################################
+# relay42 test automation demonstration
+                   #
+#
+                   #
+# (C) 2018 by Sneha Mirajkar (sneha.mirajkar@gmail.com)
+                   #
+# Can be copied for any purposes, Please get prior approval.
+                   #
+#
+                   #
+# The relya42_usermodules.py contains the following def function
+                   #
+# The create_engagement functions accepts username, password and the
+runtime engagement-id#
+# and creates the engagement and returns the engagement page link to
+relay42_main.py      #
+# The create_audience functions accepts username, password and the
+engagement-id          #
+# and creates the audience and returns the audience page link to
+relay42_main.py          #
+# The send_req_n_validate_audi_entry functions accepts username,
+password, engagement-id  #
+# and the audience page link to send request and validate the audience
+visit.             #
+#
+                   #
+###########################################################################################
+
+
 #!/usr/bin/env python
 
-def create_engagement(engagement):
+def create_engagement(username, password, engagement):
 	try :
 		from selenium import webdriver
 		from selenium.webdriver.common.keys import Keys
@@ -20,8 +50,8 @@ def create_engagement(engagement):
 		driver = webdriver.Firefox()
 		driver.get("https://admin.relay42.com")
 		time.sleep(2)
-		driver.find_element_by_name("username").send_keys("relay42test1@gmail.com")
-		driver.find_element_by_name("password").send_keys("relay42test")
+		driver.find_element_by_name("username").send_keys(username)
+		driver.find_element_by_name("password").send_keys(password)
 		driver.find_element_by_xpath('//button[@type="submit"]').click()
 		time.sleep(5)
 		driver.get("https://admin.relay42.com/site-1233/profiles/engagements/add")
@@ -53,7 +83,7 @@ def create_engagement(engagement):
 		driver.quit()
 		exit()
 
-def create_audience(engagement):
+def create_audience(username, password, engagement):
 
 	try :
 		from selenium import webdriver
@@ -75,8 +105,8 @@ def create_audience(engagement):
 		driver = webdriver.Firefox()
 		driver.get("https://admin.relay42.com")
 		time.sleep(2)
-		driver.find_element_by_name("username").send_keys("relay42test1@gmail.com")
-		driver.find_element_by_name("password").send_keys("relay42test")
+		driver.find_element_by_name("username").send_keys(username)
+		driver.find_element_by_name("password").send_keys(password)
 		driver.find_element_by_xpath('//button[@type="submit"]').click()
 		time.sleep(5)
 		driver.get("https://admin.relay42.com/site-1233/profiles/segments/add")
@@ -128,7 +158,7 @@ def create_audience(engagement):
 		driver.quit()
 		exit()
 
-def send_req_n_validate_audi_entry(audiencelink, engagement):
+def send_req_n_validate_audi_entry(username, password, audiencelink, engagement):
 
 	try :
 		from selenium import webdriver
@@ -152,8 +182,8 @@ def send_req_n_validate_audi_entry(audiencelink, engagement):
 		driver = webdriver.Firefox()
 		driver.get("https://admin.relay42.com")
 		time.sleep(2)
-		driver.find_element_by_name("username").send_keys("relay42test1@gmail.com")
-		driver.find_element_by_name("password").send_keys("relay42test")
+		driver.find_element_by_name("username").send_keys(username)
+		driver.find_element_by_name("password").send_keys(password)
 		driver.find_element_by_xpath('//button[@type="submit"]').click()
 		time.sleep(5)
 		driver.get(audiencelink)
