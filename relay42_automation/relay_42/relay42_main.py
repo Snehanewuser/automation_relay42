@@ -1,22 +1,12 @@
 ###########################################################################################
 # relay42 test automation demonstration
-                   #
-#
-                   #
 # (C) 2018 by Sneha Mirajkar (sneha.mirajkar@gmail.com)
-                   #
 # Can be copied for any purposes, Please get prior approval.
-                   #
 #
-                   #
-# The relya42_main.py generates the runtime username, password,
-engagement-id to be passed#
-# to the functions called from  the relay42_usermodules.py as
-mentioned below             #
-# create engagement create audience and
-send_request_and_validate_audience-entry          #
+# The relya42_main.py generates the runtime username, password, engagement-id to be passed
+# to the functions called from  the relay42_usermodules.py as mentioned below             
+# create engagement create audience and send_request_and_validate_audience-entry          
 #
-                   #
 ###########################################################################################
 
 
