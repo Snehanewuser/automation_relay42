@@ -10,7 +10,7 @@
 
 2. Install docker and VNC veiwer on the host machine.
 
-3. To install docker refer: https://docs.docker.com/install/linux/docker-ce/ubuntu/#os-requirements
+3. To install docker refer: https://docs.docker.com/install/linux/docker-ce/ubuntu/#os-requirements [If the user is not added to the sudoers list already, use sudo to execute all docker commands].
 
 4. To install vnc-viewer refer: https://www.realvnc.com/en/connect/download/viewer/linux/
 
