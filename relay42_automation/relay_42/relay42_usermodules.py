@@ -69,7 +69,6 @@ def create_engagement(username, password, engagement):
 		report_status(reportstring)
 		teststatus = "testcase_createEngagement:FAIL"
 		report_status(teststatus)
-		driver.quit()
 		exit()
 
 def create_audience(username, password, engagement):
@@ -147,7 +146,6 @@ def create_audience(username, password, engagement):
 		report_status(reportstring)
 		teststatus = "testcase_createaudience:FAIL"
 		report_status(teststatus)
-		driver.quit()
 		exit()
 
 def send_req_n_validate_audi_entry(username, password, audiencelink, engagement):
@@ -216,5 +214,5 @@ def send_req_n_validate_audi_entry(username, password, audiencelink, engagement)
 		report_status(report_string)
 		teststatus = "testcase_send_req_n_validate_audi_entry:FAIL"
 		report_status(teststatus)
-		driver.quit()
+		exit()
 		
