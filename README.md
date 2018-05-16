@@ -47,7 +47,8 @@
 
 13. The python automation code is designed in a modular manner to make debugging easy and can be executed independently when in need of trouble shooting.
 
-14. The automation suite also contains a  .js file help overcome the python-selenium limitations.
+14. The automation suite also contains a  .js file help overcome the python-selenium limitations [The .js helper file is    
+     sourced from StackOverflow.com].
 
 15. The automation code at ~/automation_relay42/relay42_automation/relay_42 contains the automation suite.
 
