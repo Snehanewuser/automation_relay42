@@ -7,7 +7,7 @@ RUN sudo apt-get update -y && \
 
 ADD https://github.com/mozilla/geckodriver/releases/download/v0.20.1/geckodriver-v0.20.1-linux64.tar.gz ./
 
-RUN tar -zxvf ./geckodriver-v0.20.1-linux64.tar.gz -C /usr/local/bin
+RUN tar -zxvf ./geckodriver-v0.20.1-linux64.tar.gz -C /usr/bin
 
 RUN mkdir relay42
 COPY ./relay_42 relay42/ 
