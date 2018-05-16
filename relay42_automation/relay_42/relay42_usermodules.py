@@ -21,6 +21,7 @@ def create_engagement(username, password, engagement):
 		from selenium import webdriver
 		from selenium.webdriver.common.keys import Keys
 		from selenium.webdriver.support.ui import Select
+		from selenium.webdriver import FirefoxOptions
 		import datetime
 		import time
 		import os
@@ -33,8 +34,10 @@ def create_engagement(username, password, engagement):
 		exit()
 
 	try :
-		driver = webdriver.Firefox()
-		driver.get("https://admin.relay42.com")
+		opts = FirefoxOptions()
+                opts.add_argument("--headless")
+                driver = webdriver.Firefox(firefox_options=opts)
+                driver.get("https://admin.relay42.com")
 		time.sleep(2)
 		driver.find_element_by_name("username").send_keys(username)
 		driver.find_element_by_name("password").send_keys(password)
@@ -76,6 +79,7 @@ def create_audience(username, password, engagement):
 		from selenium.webdriver.common.keys import Keys
 		from selenium.webdriver.support.ui import Select
 		from selenium.webdriver.common.action_chains import ActionChains
+		from selenium.webdriver import FirefoxOptions
 		import datetime
 		import time
 		import os
@@ -88,7 +92,9 @@ def create_audience(username, password, engagement):
 			print ("failed to load selenium module for create_")
 			exit()
 	try :
-		driver = webdriver.Firefox()
+		opts = FirefoxOptions()
+                opts.add_argument("--headless")
+                driver = webdriver.Firefox(firefox_options=opts)
 		driver.get("https://admin.relay42.com")
 		time.sleep(2)
 		driver.find_element_by_name("username").send_keys(username)
@@ -150,7 +156,7 @@ def send_req_n_validate_audi_entry(username, password, audiencelink, engagement)
 		from selenium import webdriver
 		from selenium.webdriver.common.keys import Keys
 		from selenium.webdriver.support.ui import Select
-		from selenium.webdriver.common.action_chains import ActionChains
+		from selenium.webdriver import FirefoxOptions
 		import datetime
 		import time
 		import os
@@ -165,7 +171,9 @@ def send_req_n_validate_audi_entry(username, password, audiencelink, engagement)
 		print ("failed to load selenium module for create_")
 		exit()
 	try: 
-		driver = webdriver.Firefox()
+		opts = FirefoxOptions()
+                opts.add_argument("--headless")
+                driver = webdriver.Firefox(firefox_options=opts)
 		driver.get("https://admin.relay42.com")
 		time.sleep(2)
 		driver.find_element_by_name("username").send_keys(username)
