@@ -12,4 +12,4 @@ RUN tar -zxvf ./geckodriver-v0.20.1-linux64.tar.gz -C /usr/local/bin
 RUN mkdir relay42
 COPY ./relay_42 relay42/ 
 WORKDIR relay42
-ENTRYPOINT ["python","relay42_main.py"]
+ENTRYPOINT ["sudo", "python", "relay42_main.py"]
