@@ -20,7 +20,7 @@
 
 7. On the host, execute command “cd ~/automation_relay42/relay42_automation/” to navigate to the source directory.
 
-8. The Dockerfile at ~/automation_relay42/relay42_automation/ contains the details about how to build a docker image from the repo and install the required installables and copies the automation code to the image at ~/automation_relay42/relay42.
+8. The Dockerfile at ~/automation_relay42/relay42_automation/ contains the details about how to build a docker image from the repo and install the required installables and copy the automation code to the image at ~/relay42.
 
 9. Use the following command to build the image:
     
@@ -28,7 +28,8 @@
 
     docker build . -t relay42_automation:0.0.1
 
-10. Use “docker run” to launch an instance and also mount the results folder, set the web-APP port and the vnc port with instance name
+10. Use “docker run” to launch an instance and also mount the results folder, set the web-APP port and the vnc port with    
+    instance name
 
 11. Use the following command to trigger docker run for single instance:
 
@@ -45,7 +46,8 @@
     when the docker container comes up, on the host machine do a tail -f /tmp/relay42_results/reportfile.txt you can see new 
     logs of the test execution on the container.
 
-13. The python automation code is designed in a modular manner to make debugging easy and can be executed independently when in need of trouble shooting.
+13. The python automation code is designed in a modular manner to make debugging easy and can be executed independently when 
+    in need of trouble shooting.
 
 14. The automation suite also contains a  .js file help overcome the python-selenium limitations [The .js helper file is    
      sourced from StackOverflow.com].
