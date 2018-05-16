@@ -43,7 +43,7 @@
 
     docker run --rm -p 6081:80 -p 5901:5900 -v /tmp/relay42_results:/tmp/relay42_results relay42_automation:0.0.1
     
-    when the docker container comes up, on the host machine do a tail -f /tmp/relay42_results/reportfile.txt you can see new 
+    when the docker container comes up, on the host machine do a tail -f /tmp/relay42_results/reportfile.txt you can see  
     logs of the test execution on the container.
 
 13. The python automation code is designed in a modular manner to make debugging easy and can be executed independently when 
